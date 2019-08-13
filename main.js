@@ -57,6 +57,11 @@ var greenMarker = L.icon({
   popupAnchor: [6, 0]
 })
 //  L.marker([34,-117.5], {icon: greenMarker}).addTo(map);
+//function fetchGreen() {
+  //fetch("https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2014-01-01&alertlevel=green") //link used to "fetch the data"
+  //  .then(function(response) { //tcreate a funciton to remove the data,
+    //  return response.json(); // we tell the computer that this data is called .json
+    //})
 
 function fetchData() {
   fetch("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson") //link used to "fetch the data"
@@ -100,6 +105,10 @@ function fetchData() {
     })
 }
 fetchData();
+//fetchGreen();
+//fetchYellow();
+//fetchOrange();
+//fetchRed();
 
 const fetchButton = document.getElementById("myCheck");
 

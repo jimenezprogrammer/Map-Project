@@ -31,7 +31,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                Foobar<b>Company</b>
+                <b>Map Options</b>
             </a>
         </div>
     <!-----------------------------(toggle for better movle display)sidebar template------------------------------------------------>
@@ -39,50 +39,59 @@
      <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <!-- Dashboard -->
-                <li class="active open">
-                  <a href="#">
-                      <span class="pull-right hidden-xs showopacity glyphicon material-icons">av_timer</span> Dashboard
+                <li class="separator">Map Filters</li>
+                <li class="">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <span class="pull-right hidden-xs showopacity glyphicon material-icons">av_timer</span> Alert Level <span class="caret"></span>
                   </a>
+                  <ul class="dropdown-menu forAnimate" role="menu">
+                      <li><a href="#"><input type="checkbox" id="myCheck"></imput><i class="material-icons"></i>    All of them</a></li>
+                      <li><a href="#"><input type="checkbox" id="greenBox"></imput><i class="material-icons"></i> green</a></li>
+                      <li><a href="#"><input type="checkbox" id="yellowBox"></imput><i class="material-icons"></i>  yellow</a></li>
+                      <li><a href="#"><input type="checkbox" id="orangeBox"></imput><i class="material-icons"></i>  orange</a></li>
+                        <li><a href="#"><input type="checkbox" id="redBox"></imput><i class="material-icons"></i>  Red</a></li>
+                  </ul>
                 </li>
                 <!-- Banner -->
                 <li class="">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span class="menu-icon pull-right hidden-xs showopacity glyphicon material-icons">burst_mode</span>
-                        Banners <span class="caret"></span>
+                        Date <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu forAnimate" role="menu">
-                        <li><a href="#"><i class="material-icons">add</i> Add</a></li>
-                        <li><a href="#"><i class="material-icons">sort</i> List</a></li>
+                        <li><a href="#"><input type="checkbox" id="thirtyDays"><i class="material-icons"></i> last 30 days</a></li>
+                        <li><a href="#"><input type="checkbox" id="ninetyDays"><i class="material-icons"></i> last 90 days</a></li>
+                        <li><a href="#"><input type="checkbox" id="twelveMonths"><i class="material-icons"></i> last 12 months </a></li>
                     </ul>
                 </li>
-                <li class="separator">Content</li>
+                <li class="separator">types of maps</li>
                 <!-- Page -->
                 <li class="">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span class="menu-icon pull-right hidden-xs showopacity glyphicon material-icons">description</span>
-                        Pages <span class="caret"></span>
+                        Heat map <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu forAnimate" role="menu">
-                        <li><a href="#"><i class="material-icons">add</i> Add</a></li>
-                        <li><a href="#"><i class="material-icons">sort</i> List</a></li>
+                        <li><a href="#"><i class="material-icons">add</i> Add Map</a></li>
+                        <li><a href="#"><i class="material-icons">delete</i> Remove Map</a></li>
                     </ul>
                 </li>
                 <!-- Blog -->
                 <li class="">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span class="menu-icon pull-right hidden-xs showopacity glyphicon material-icons">chat_bubble_outline</span>
-                        Blog <span class="caret"></span>
+                        Affeted Areas<span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu forAnimate" role="menu">
-                        <li><a href="#"><i class="material-icons">add</i> Add</a></li>
-                        <li><a href="#"><i class="material-icons">sort</i> List</a></li>
+                        <li><a href="#"><i class="material-icons">add</i> Add Map </a></li>
+                        <li><a href="#"><i class="material-icons">delete</i> remove map</a></li>
                     </ul>
                 </li>
                 <!-- Tags -->
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon material-icons">label</span>
-                        Tags <span class="caret"></span>
+                        Live twitter feed <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu forAnimate" role="menu">
                         <li><a href="#"> <i class="material-icons">add</i> Add</a></li>
@@ -115,7 +124,6 @@
   <!-------------------------------------------------------(collect the nav links)sidebar template------------------------------------->
 
 
-<input type="checkbox" id="myCheck">Fetch Data</imput>
     <div id="mymap"> </div>function
 
     <!-- Make sure you put this AFTER Leaflet's CSS -->
